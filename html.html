@@ -3,8 +3,25 @@
     <head>
         <title>HTML</title>
         <meta charset="utf-8">
-        <style>
+
+        <!-- 
+        style: Define a aparência 
+        seletor {prop: valor}
+         seletor = p,span, table...#RRGGBBAA
+         #RRGGBBAA = Indica que a cor em hexadecimal
+         R: Red
+         G: Green
+         B: Blue
+         A: Aura (opicional) Define Opacidade b
+         Border: Adiciona borda
+         width: Dafine tamanho da área
+         transition: Define quanto tempo um evento demora para acontecer
+         text-align center: para alinhar texto no centro;-->
+        
+        <style>    
             span{color: #ff12ff;}
+            
+            img {border-radius: 10px;}
             #Empadinha{
                 display: block;
                 margin-left: auto;
@@ -14,6 +31,57 @@
                 width: 500px;
                 border:1px solid rgb(300, 300, 0)
             }
+            table,td,th, caption{
+          
+                margin-left: auto;
+                margin-right: auto;
+                border: 1px solid #3a213a;
+                border-collapse: collapse;
+            }
+            
+            #tabela-churrasco,  
+            #tabela-churrasco td, 
+            #tabela-churrasco th, 
+            caption{
+                border: 2px solid #996300;
+                border-collapse: collapse;
+
+            }
+            #tabela-churrasco td, 
+            #tabela-churrasco th{
+                text-align: center;
+            }
+            #tabela-churrasco tr:nth-child(2n){
+                background-color: rgb(253, 243, 154);
+            } 
+            #tabela-churrasco td:hover{
+                background-color: gold;
+                font-size: 2em;
+            }
+             #tabela-churrasco td:hover{
+                background-color: rgb(255, 218, 94);
+             }
+            #tabela-churrasco caption {
+                border-radius: 10px 10px 0px 0px;
+
+            } 
+            #card {border:1px solid black;
+                box-shadow: 1px 2px gray;
+                display: inline-block;
+
+            }
+            #card h2{
+                display: inline-block
+            }
+            #card #empadinha{
+                width: 20px;
+            }
+            #card #empadinha2{
+                width: 100px;
+                display: block;
+                margin: 10px;
+            }
+            
         </style>
     
         <body>
@@ -70,6 +138,10 @@
             <hr>
             <h3>Listas</h3>
 
+            <!--
+            type = Indica tipo de enumeração
+            start = Indica por onde a listagem irá começar-->
+
             <p><b>Alimentos saudáveis: Lista desordenada</b> </p>
             <ul>
                 <li>Empadinha</li>
@@ -108,9 +180,123 @@
             <img id="Empadinha" src="./Imagem/images.jpg" alt="Empadinha">
             <p style= "text-align: center;"> 
                 <a href="https://lecado.com.br/produto/empadinha-de-frango-coquetel/"> Onde achar imagem de empadinha</a></p>
-            <!--style= "text-align: center;" para alinhar texto no centro-->
+            
+            <!-- 
+            id = identificação do elemento
+            src =  fonte da imagem
+            alt =  define descrição alternativa para a imagem-->
+
+            <hr>
+            <h3>Tabelas</h3>
+
+             <!--
+             tr = Nova Linha
+             td = Adiciona os elementos horizontalmente
+             th = Nova Coluna
+             Caption = Título-->
+
+             <!--
+             rowspan = Une linas
+             colspan = Une colunas-->
+
+             <!--table>(tr>(td{$}+td{1})*10)*10 : Gera automaticamente-->
 
 
+
+            <table id="tabela-churrasco"> 
+                <caption>Lista de Compras</caption>
+                <tr> 
+                    <th>ítens</th>
+                    <th>Classificação</th>
+                    <th>Descrição</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                    <th>Subtotal</th>
+                </tr>
+
+                <tr> 
+                    <td>1</td>
+                    <td rowspan="3" >Comidas </td>
+                    <td>Carne</td>
+                    <td>6</td>
+                    <td>40</td>
+                    <td>240</td>
+                </tr>
+                <tr> 
+                    <td>2</td>
+                    <td>Franguinho</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Pão de alho</td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>30</td>
+                </tr> 
+                  <tr>
+                    <td>4</td>
+                    <td rowspan="3">Bebidas</td>
+                    <td>Cerveja</td>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>100</td>
+                </tr>
+                <tr> 
+                    <td>5</td>
+                    <td>Água com gás</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Refri</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>40</td>
+                </tr> 
+                <tr></tr>
+                    <td>7</td>
+                    <td  rowspan="3">Outros</td>
+                    <td>Copos</td>
+                    <td>1</td>
+                    <td>8</td>
+                    <td>8</td>
+                </tr>
+                <tr> 
+                    <td>8</td>
+                    <td>Guardanapos</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Carvão</td>
+                    <td>1</td>
+                    <td>32</td>
+                    <td>32</td>
+                </tr>
+
+                <tr>
+                    <td colspan="5" class="Total">Total</td>
+                    <td>500</td>
+                </tr>
+               
+                    
+            </table>
+
+            <h3>Container (DIV)</h3>
+            <div id="card">
+                <img id="Empadinha" src="./Imagem/images.jpg" alt="Empadinha">
+                <h2>Título</h2>
+                <img id="Empadinha 2" src="./Imagem/images.jpg" alt="Empadinha">
+
+
+            </div>
 
 
 
