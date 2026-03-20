@@ -1,0 +1,12 @@
+ /**Regra CSS
+
+ seletor  { propriedade:valor;
+            propriedade:valor;
+            propriedade:valor;
+          }
+            */
+
+ h1{
+    color: blueviolet;
+ }     
+ p{color: gray}    

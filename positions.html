@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{border:2px rgb(250, 152, 135); margin:1px; padding: 1px}
+        .container{position:relative; 
+            border-color: blueviolet;
+            border-width: 10px;
+            }
+        .box{display:inline-block;
+            width:100px; 
+            border-color: black;}
+        #box1{background-color: aquamarine;
+            position:relative;
+            top: 200px;
+            }
+        #box2{background-color: aquamarine;
+            position:static;
+            top: 200px;  }
+        #box3{background-color: aquamarine;
+            position:absolute;
+            top: 5px;
+            left:5px
+            }
+        #box4{background-color: aquamarine;
+            position:fixed;
+            top:0px;
+            left:0px;
+            }
+        #box5{background-color: aquamarine;}
+        span:last-child{background-color: aquamarine;}
+        #container{display:relative;}
+        
+
+    </style>
+</head>
+<body>
+    <!-- div#box$.box{$}*5 FAZ VÁRIAS DIVS DE UMA VEZ-->
+
+    <div="container">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+        <div id="box5" class="box">5</div>
+        <span class = "box">6</span>
+
+    </div>
+</body>
+</html>
