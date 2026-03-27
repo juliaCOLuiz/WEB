@@ -7,41 +7,49 @@
 
     <style>
 
-        *{border:2px rgb(250, 152, 135); margin:1px; padding: 1px}
-        .container{position:relative; 
+        *{border:1px solid red (250, 152, 135); 
+            margin:0px; 
+            padding: 0px}
+
+        .container{
+            position:static; 
             border-color: blueviolet;
             border-width: 10px;
             }
+
         .box{display:inline-block;
             width:100px; 
+            height: 100px;
             border-color: black;}
-        #box1{background-color: aquamarine;
-            position:relative;
-            top: 200px;
-            }
-        #box2{background-color: aquamarine;
-            position:static;
-            top: 200px;  }
-        #box3{background-color: aquamarine;
-            position:absolute;
-            top: 5px;
-            left:5px
-            }
-        #box4{background-color: aquamarine;
-            position:fixed;
-            top:0px;
-            left:0px;
-            }
-        #box5{background-color: aquamarine;}
-        span:last-child{background-color: aquamarine;}
-        #container{display:relative;}
-        
 
+        #box1{background-color: rgb(172, 127, 255);
+            position:relative;
+            top: 300px;
+            left: 200px;
+            }
+        #box2{background-color: rgb(131, 71, 36);
+            position:absolute;
+            opacity: 0.5;
+            text-align: center;
+            top: 300px;
+            }
+        #box3{background-color: rgb(255, 127, 217);
+            position:fixed;
+            right: 0px;
+            top: 0px;
+            }
+        #box4{background-color: rgb(255, 127, 127);
+            
+            }
+        #box5{background-color: rgb(26, 139, 12);}
+        span:last-child{background-color: rgb(92, 87, 134);}
+     
     </style>
 </head>
 <body>
     <!-- div#box$.box{$}*5 FAZ VÁRIAS DIVS DE UMA VEZ-->
 
+    <div style="height: 100px;"></div>
     <div="container">
         <div id="box1" class="box">1</div>
         <div id="box2" class="box">2</div>
