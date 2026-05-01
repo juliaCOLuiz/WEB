@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandeiras com CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+    
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    section{
+      text-align: center;
+    }
+
+    .bandeira {
+      width: 180px;
+      height: 120px;
+      border: 1px solid #ccc;
+      display: flex;
+    }
+
+    .franca {
+      display: flex;
+    }
+
+    .franca div {
+      flex: 1;
+    }
+
+    .azul { background-color: #0055A4; }
+    .branco { background-color: #FFFFFF; }
+    .vermelho { background-color: #EF4135; }
+
+    .alemanha {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .alemanha div {
+      flex: 1;
+    }
+
+    .preto { background-color: #000000; }
+    .amarelo { background-color: #FFCE00; }
+
+    .japao {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .circulo {
+      width: 60px;
+      height: 60px;
+      background-color: #BC002D;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h3>Franca</h3>
+    <div class="bandeira franca">
+      <div class="azul"></div>
+      <div class="branco"></div>
+      <div class="vermelho"></div>
+    </div>
+</section>
+
+   <section>
+    <h3>Alemanha</h3>
+    <div class="bandeira alemanha">
+      <div class="preto"></div>
+      <div class="vermelho"></div>
+      <div class="amarelo"></div>
+    </div>
+</section>
+
+   <section>
+    <h3>Japao</h3>
+    <div class="badeira japao">
+      <div class="circulo"></div>
+    </div>
+</section>
+
+</body>
+</html>
