@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplo CSS</title>
+  <style>
+     img {border-radius: 10px;}
+
+            #cssImagem{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+
+                width: 500px;
+                border:1px solid rgb(300, 300, 0)}
+
+    .paragrafo1{
+            color: rgb(51, 12, 44);
+             text-align: center  }
+
+    /* Regra CSS principal */
+    button {
+      background-color: rgb(54, 54, 54); /* propriedade + valor */
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      transition: 0.3s;
+      border-radius: 10px;
+    }
+
+    button:hover {
+      animation: mudarCor 0.5s forwards;
+    }
+
+    button::before {
+      content: "🖤 ";
+    }
+
+    /* Animação */
+    @keyframes mudarCor {
+      from {
+        background-color: rgb(92, 0, 0)
+      }
+      to {
+        background-color: rgb(224, 0, 0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+    <h3 style="text-align: center;">Estrutura e sintaxe do CSS</h3>
+
+     <img id="cssImagem" src="Imagens/cssImagem.png">
+
+      <div class="paragrafo1">
+        <P><b>Uma regra CSS é um conjunto de instruções que define como um ou 
+            mais elementos HTML 
+            devem ser exibidos na página.</b></P>
+    
+    </div>
+
+     <div class="paragrafo2">
+        <P><b>Ela é composta por três partes principais:</b></P>
+
+        <ul>
+                <li>Seletor: indica qual elemento será estilizado (ex: button, .classe, #id)</li>
+                <li>Propriedades: características que você quer alterar (ex: color, background)</li>
+                <li>Valores: definem como a propriedade será aplicada (ex: red, 20px)</li>
+            </ul>
+    
+    </div>
+
+
+
+  <button>Clique aqui</button>
+
+
+</body>
+</html>
