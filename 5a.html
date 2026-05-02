@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Layout Final</title>
+
+<style>
+  body {
+    margin: 0;
+    min-width: 600px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: 6px;
+    padding: 6px;
+  }
+
+  .topo {
+    display: flex;
+    flex: 1;
+    gap: 6px;
+  }
+
+  .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .coluna1 { flex: 2.2; }
+  .coluna2 { flex: 1.2; }
+  .coluna3 { flex: 1.8; }
+
+  div { border-radius: 3px; }
+
+  .laranja { background: #f39a21; flex: 1; }
+  .azul    { background: #a9b8cf; flex: 1; }
+  .rosa    { background: #e4ad99; flex: 1; }
+  .cinza   { background: #bccdcd; flex: 1; }
+
+  .amarelo {
+    background: #f0b22e;
+    height: 15%;
+  }
+
+  .linha {
+    display: flex;
+    flex: 1;
+  }
+
+  .verde-area {
+    display: flex;
+    flex: 1;
+    gap: 6px;
+  }
+
+  .verde {
+    background: #b4c46a;
+    flex: 4;
+  }
+
+  .branco {
+    background: #fff;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .circulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+  }
+
+  .circulo {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+  }
+
+  .c1 { background: #e79a6f; }
+  .c2 { background: #caa8a8; }
+  .c3 { background: #a8b06f; }
+  .c4 { background: #c9bdd8; }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="topo">
+
+    <!-- esquerda -->
+    <div class="coluna coluna1">
+      <div class="laranja"></div>
+
+      <div class="linha">
+        <div class="azul"></div>
+      </div>
+    </div>
+
+    <!-- meio -->
+    <div class="coluna coluna2">
+      <div class="rosa"></div>
+    </div>
+
+    <!-- direita -->
+    <div class="coluna coluna3">
+      <div class="cinza"></div>
+
+      <div class="verde-area">
+        <div class="verde"></div>
+
+        <div class="branco">
+          <div class="circulos">
+            <div class="circulo c1"></div>
+            <div class="circulo c2"></div>
+            <div class="circulo c3"></div>
+            <div class="circulo c4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="amarelo"></div>
+
+</div>
+
+</body>
+</html>
