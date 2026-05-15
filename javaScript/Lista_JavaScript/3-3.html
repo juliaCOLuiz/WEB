@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <style>
+        #divSorteio{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #controleSorteio{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+     <h1>Sorteio</h1>
+        <label for="entradaA">A</label>
+        <input type="number" id="entradaA">
+
+        <label for="entradaB">B</label>
+        <input type="number" id="entradaB">
+     
+        <div id=resultado></div>  
+
+        <button id="btn">Sortear</button>
+
+    <script>
+        entradaA, entradaB, resultado;
+        let button=document.querySelector("#btn")
+
+        button.addEventListener("click", ()=>{
+
+            let vmin= Number(entradaA.value)
+            let vmax= Number(entradaB.value)
+
+            let r = Math.floor(Math.random()*(vmax-vmin)+vmin)
+            console.log(r)
+           
+            let p = document.createElement("p")
+            p.innerHTML = r
+           
+            p.style.diplay ="inline-block"
+            p.style.border= "1px, solid, black"
+            p.style.borderRadius = "50%"
+            p.style.padding = "10px"
+            p.style.gap = "1px"
+            resultado.appendChild(p)
+            
+           
+        })
+    </script>
+</body>
+</html>
